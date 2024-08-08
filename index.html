@@ -3,60 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Travel Blog</title>
+    <title>Namira Journey</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>My Travel Adventures</h1>
+      	    <h1><center>Welcome to my Personal Blog!</h1></center>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="traveling.html">Traveling</a></li>
-                    <li><a href="about.html">About Me</a></li>
+		    <button onclick="location.href='index.html'">Home</button>
+                    <button onclick="location.href='#'">My Journey</button>
+                    <button onclick="location.href='aboutme.html'">About Me</button>
+		    <button onclick="location.href='contact.html'">Contact</button>
                 </ul>
             </nav>
         </div>
     </header>
-
+    
     <main>
-        <section class="hero">
-            <h2>Welcome to My Blog!</h2>
-            <p>Join me as I explore the world, share my travel tips, and capture stunning photos from my adventures.</p>
-        </section>
-
-        <section class="recent-posts">
-            <h2>Recent Adventures</h2>
-            <div class="post-preview">
-                <img src="paris.jpg" alt="Paris" class="post-image">
-                <div class="post-content">
-                    <h3><a href="traveling.html#paris">Paris, France</a></h3>
-                    <p>Date: August 2024</p>
-                    <p>Highlights: Eiffel Tower, Louvre Museum, charming cafes.</p>
-                </div>
-            </div>
-            <div class="post-preview">
-                <img src="kyoto.jpg" alt="Kyoto" class="post-image">
-                <div class="post-content">
-                    <h3><a href="traveling.html#kyoto">Kyoto, Japan</a></h3>
-                    <p>Date: June 2024</p>
-                    <p>Highlights: Fushimi Inari Shrine, Bamboo Forest, traditional tea ceremonies.</p>
-                </div>
-            </div>
-            <div class="post-preview">
-                <img src="nyc.jpg" alt="New York City" class="post-image">
-                <div class="post-content">
-                    <h3><a href="traveling.html#nyc">New York City, USA</a></h3>
-                    <p>Date: March 2024</p>
-                    <p>Highlights: Times Square, Central Park, Broadway shows.</p>
-                </div>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Explore the World with Me!</h2>
+                <p>Discover travel stories, tips, and guides to inspire your next adventure.</p>
+                <a href="#destinations" class="btn">Explore My Journey!</a>
             </div>
         </section>
-    </main>
-
+        
+        <section id="destinations" class="cards">
+            <h2>My Popular Destinations:</h2>
+            <div class="card">
+                <img src="paris.jpg" alt="Paris">
+                <h3>Paris</h3>
+                <p>Discover the romance and beauty of Paris, the city of lights. <a href="#">Read more</a></p>
+            </div>
+            <div class="card">
+                <img src="nyc.jpg" alt="New York City">
+                <h3>New York City</h3>
+                <p>Experience the vibrant culture and iconic landmarks of New York City. <a href="#">Read more</a></p>
+            </div>
+            <div class="card">
+                <img src="tokyo.jpg" alt="Tokyo">
+                <h3>Tokyo</h3>
+                <p>Experience the vibrant culture and modern marvels of Tokyo. <a href="article.html">Read more</a></p>
+            </div>
+        </section>
+        
+        <section id="tips">
+            <h2><center>Travel Tips</h2></center>
+            <div class="tip">
+                <h3>Packing Essentials</h3>
+                <p>Learn how to pack efficiently for any trip.</p>
+            </div>
+            <div class="tip">
+                <h3>Travel Safety</h3>
+                <p>Tips for staying safe and healthy while traveling.</p>
+            </div>
+        </section>
+</main>
+    
     <footer>
-        <p>&copy; 2024 My Travel Blog. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Namira Journey. All rights reserved.</p>
+            <div class="social-media">
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

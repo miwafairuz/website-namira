@@ -1,0 +1,248 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #FFEBD4; /* Light pink background */
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    color: #333;
+
+}
+
+/* Header Styles */
+header {
+    background: #F0A8D0; /* Light green */
+    color: #333;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Styles */
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav button {
+    background: #ff6347; /* Button color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+nav button:hover {
+    background: #ff4500; /* Hover color */
+}
+
+nav button:focus {
+    outline: none;
+}
+
+/* Adjust for mobile responsiveness */
+@media (max-width: 768px) {
+    nav button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+
+/* Hero Section */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #black;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background: #ff4500;
+}
+
+/* Cards Section */
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+.card {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    margin: 0;
+    padding: 10px;
+    background: #ff6347;
+    color: #fff;
+}
+
+.card p {
+    padding: 10px;
+}
+
+/* Tips Section */
+.tip {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+/* Footer Styles */
+footer {
+    background: #F0A8D0; /* Light green */
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-media a {
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+/* Article Styles */
+.article {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.article h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.article .date {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.article-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.article p {
+    margin: 10px 0;
+}
+
+.article h3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}
